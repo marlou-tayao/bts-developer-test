@@ -14,7 +14,7 @@ When you fork the respositiory and start working, you will notice that the scaff
 
 We've included a JPEG of the product card design in this repo to show you how it should look like. On the left, we have a non-hovered state and on the right, hovered. If you don't have chance to get around to doing the add to cart functionality, that's not an issue.
 
-Thats it. We don't want to shackle you with further restrictions. Development is about being creative and free thinking when it comes to how you approach code and problems that arise from code. We don't want you spending too long on this task, 2-3 hours should the limit for this test.
+Thats it. We don't want to shackle you with further restrictions. Development is about being creative and free thinking when it comes to how you approach code and problems that arise from code. We don't want you spending too long on this task, limit yourself to 2-3 hours on this test. If you do not domplete all the work in that time, do not worry, submit what you have. We are looking at your approach rather than completion.
 
 <img src="https://github.com/bravetheskies/bts-developer-test/blob/main/product_card.jpg" style="margin:auto;" />
 
