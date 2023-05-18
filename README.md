@@ -8,7 +8,7 @@ If you've got this far in the recruitement proccess, well done! Onto the fun stu
 
 In this respository, you will notice that we have setup a barebones theme / template files. We've setup a very basic header and footer to give the theme a bit of stability of the bat but we would like you to fork this repository and create a featured product card section that has different functionality on desktop compared to mobile.
 
-On desktop, the product cards should automatically drop into a grid format ( 4 product cards across should work fine ) but when the user is on mobile, we would like you to have this grid display the product cards in a slider-type format. This can be achieved by using a Slider library of your choice but our preference here at Brave the Skies is [Swiper.js](https://swiperjs.com/).
+On desktop, the product cards should automatically drop into a grid format (4 product cards across should work fine) but when the user is on mobile, we would like you to have this grid display the product cards in a slider-type format. This can be achieved by using a Slider library of your choice but our preference here at Brave the Skies is [Swiper.js](https://swiperjs.com/).
 
 When you fork the respositiory and start working, you will notice that the scaffold is bundled with Webpack and Tailwind. This would be preferrable to use throughout the task.
 
