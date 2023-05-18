@@ -16,6 +16,8 @@ We've included a JPEG of the product card design in this repo to show you how it
 
 Thats it. We don't want to shackle you with further restrictions. Development is about being creative and free thinking when it comes to how you approach code and problems that arise from code. We don't want you spending too long on this task, 2-3 hours should the limit for this test.
 
+<img src="https://github.com/bravetheskies/bts-developer-test/blob/main/product_card.jpg" style="margin:auto;" />
+
 ---
 ### If Possible
 
