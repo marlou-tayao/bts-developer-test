@@ -1,0 +1,72 @@
+.moonbase-header {
+  @apply relative z-10;
+}
+
+/* Mega Menu */
+.mega-menu {
+  @apply static;
+
+  &__list {
+    @apply grid gap-x-2 md:gap-x-4 list-none px-2 md:px-4;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    &--condensed {
+      @apply block;
+
+      .mega-menu__link {
+        @apply font-normal text-sm;
+      }
+    }
+  }
+
+  &__link {
+    @apply pt-2 block text-contrast-darkest py-3 font-heading text-sm;
+
+    &:hover,
+    &--active {
+      @apply text-contrast-darkest underline;
+    }
+
+    &--level-2 {
+      @apply text-base;
+
+      &:not(:only-child) {
+        @apply mb-4;
+      }
+    }
+  }
+
+  &__content {
+    @apply opacity-0 transition-all duration-300 ease-in-out border-0 rounded-none left-0 overflow-y-auto py-10 px-4 absolute right-0 top-full bg-white;
+  }
+
+  &[open] .mega-menu__content {
+    @apply opacity-100 transform translate-y-0 transition-all duration-300 ease-in-out bg-white shadow-md  shadow-contrast-light;
+  }
+
+  &:not([open]) .mega-menu__content {
+    @apply opacity-0 transform translate-y-0 transition-all duration-300 ease-in-out;
+  }
+}
+
+.header--top-center {
+  .mega-menu__list {
+    @apply flex justify-center flex-wrap gap-0;
+
+    li {
+      @apply w-1/6 pr-10;
+    }
+  }
+}
+
+.header__menu-item {
+  @apply font-heading px-10 flex items-center flex-row cursor-pointer text-sm;
+
+  svg {
+    @apply ml-2;
+  }
+}
+
+.mega-menu__list_heading {
+  @apply  font-heading text-base font-medium mb-4 block;
+}

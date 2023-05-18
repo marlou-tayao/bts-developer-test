@@ -1,0 +1,21 @@
+/*
+  Moonbase Stylesheets 🚀
+  - Make sure to use @layer base, @layer components and @layer utilities to ensure that your styles are applied in the correct order.
+    - The base layer is for things like reset rules or default styles applied to plain HTML elements.
+    - The components layer is for class-based styles that you want to be able to override with utilities.
+    - The utilities layer is for small, single-purpose classes that should always take precedence over any other styles.
+    - ref: https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
+*/
+
+/**
+ * Tailwind CSS Required Files
+**/
+@import "tailwindcss/base"; 
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/**
+ * Layout
+**/ 
+@import 'layout/_header';
+@import 'layout/_footer';

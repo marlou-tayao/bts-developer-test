@@ -1,0 +1,4 @@
+# Ignore Generic Project Files
+node_modules/
+.DS_Store
+*.log

@@ -1,0 +1,59 @@
+{
+  "current": {
+    "site_logo": "{{ shop.brand.logo }}",
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "44dfecca-2279-4046-8431-85ccb8b06ee0": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter Title",
+              "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+          },
+          "b06dae32-2741-46fa-9a57-2114fbbb5fc2": {
+            "type": "linklist",
+            "settings": {
+              "title": "Delivery",
+              "linklist": "footer"
+            }
+          },
+          "aed23305-0547-4645-9cf0-a20d0109104e": {
+            "type": "linklist",
+            "settings": {
+              "title": "Sitemap",
+              "linklist": "main-menu"
+            }
+          },
+          "33a43182-de52-4b42-a370-2ed67f42ac91": {
+            "type": "linklist",
+            "settings": {
+              "title": "Pages",
+              "linklist": "mobile-menu"
+            }
+          },
+          "669b1f60-217e-4c51-b3c7-a15ba10adadc": {
+            "type": "linklist",
+            "settings": {
+              "title": "Shipping",
+              "linklist": "mobile-secondary-menu"
+            }
+          }
+        },
+        "block_order": [
+          "44dfecca-2279-4046-8431-85ccb8b06ee0",
+          "b06dae32-2741-46fa-9a57-2114fbbb5fc2",
+          "aed23305-0547-4645-9cf0-a20d0109104e",
+          "33a43182-de52-4b42-a370-2ed67f42ac91",
+          "669b1f60-217e-4c51-b3c7-a15ba10adadc"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

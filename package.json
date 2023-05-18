@@ -1,0 +1,60 @@
+{
+  "name": "moonbase-framework",
+  "description": "Customizable framework with modular development environment for blazing-fast Shopify theme creation",
+  "author": "Brave The Skies",
+  "version": "3.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "run-p -r connect:dev webpack:watch",
+    "connect:dev": "env-cmd -r shopify.presets.json -e development shopify theme dev",
+    "deploy": "run-s webpack:build && shopify theme push",
+    "deploy:new": "run-s webpack:build && cd shopify && shopify theme push --unpublished",
+    "webpack:watch": "cross-env NODE_ENV=development BROWSERSLIST_ENV=development BROWSERSLIST_CONFIG=.config/.browserslistrc webpack --config .config/webpack/webpack.dev.js --watch --progress",
+    "webpack:build": "cross-env NODE_ENV=production BROWSERSLIST_ENV=production BROWSERSLIST_CONFIG=.config/.browserslistrc webpack --config .config/webpack/webpack.prod.js --progress",
+    "shopify:serve": "cd shopify && shopify theme serve",
+    "shopify:pull": "cd shopify && shopify theme pull",
+    "lint": "run-s -c lint:*",
+    "lint:js": "eslint src/**/*.js --config .config/.eslintrc.js",
+    "lint:css": "stylelint src/**/*.{css,sass,scss} --config .config/.stylelintrc.js",
+    "lint:shopify": "cd shopify && shopify theme check",
+    "fix": "run-s -c fix:*",
+    "fix:js": "eslint src/**/*.js --config .config/.eslintrc.js --fix",
+    "fix:css": "stylelint src/**/*.{css,sass,scss} --config .config/.stylelintrc.js --fix",
+    "fix:shopify": "cd shopify && shopify theme check -a"
+  },
+  "dependencies": {
+    "swiper": "9.1.0",
+    "tailwindcss": "3.2.7",
+    "@shopify/theme-sections": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.21.0",
+    "@babel/plugin-transform-runtime": "7.21.0",
+    "@babel/preset-env": "7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "6.7.3",
+    "css-minimizer-webpack-plugin": "4.2.2",
+    "env-cmd": "10.1.0",
+    "eslint": "8.34.0",
+    "eslint-webpack-plugin": "4.0.0",
+    "mini-css-extract-plugin": "2.7.2",
+    "npm-run-all": "4.1.5",
+    "postcss": "8.4.21",
+    "postcss-html": "1.5.0",
+    "postcss-import": "15.1.0",
+    "postcss-loader": "7.0.2",
+    "stylelint": "15.2.0",
+    "stylelint-config-recommended": "10.0.1",
+    "stylelint-webpack-plugin": "4.1.0",
+    "url-loader": "4.1.1",
+    "webpack": "5.76.0",
+    "webpack-cli": "5.0.1",
+    "webpack-merge": "5.8.0"
+  },
+  "volta": {
+    "node": "18.15.0"
+  }
+}

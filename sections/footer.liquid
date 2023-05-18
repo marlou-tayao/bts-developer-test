@@ -1,0 +1,132 @@
+<div class="border-t border-contrast-light py-12">
+  <div class="container grid grid-cols-12">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'newsletter' -%}
+          <div class="col-span-12 md:col-span-4 md:pr-10 mb-12">
+            <h3 class="text-base font-heading text-center md:text-left mb-6">{{ block.settings.title | escape }}</h3>
+            {%- if block.settings.content -%}
+              <p class="text-sm font-body leading-relaxed mb-6 text-center md:text-left text-contrast-dark">{{ block.settings.content }}</p>
+            {%- endif -%}
+            {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <div class="newsletter-form__field-wrapper">
+                <div class="field flex shadow-md shadow-neutral-100">
+                  <input
+                    id="NewsletterForm--{{ section.id }}"
+                    type="email"
+                    name="contact[email]"
+                    class="field__input bg-gray-100 text-sm p-2 font-heading text-sm pl-4 border-0 flex-1 hover:outline-none active:outline-none focus-visible:outline-none focus-visible:rounded-tl-lg focus-visible:rounded-bl-lg"
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="ContactFooter-error"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="ContactFooter-success"
+                    {% endif %}
+                    placeholder="{{ 'newsletter.placeholder' | t }}"
+                    required
+                  >
+                  <button
+                    type="submit"
+                    class="newsletter-form__button bg-neutral-800 hover:bg-neutral-600 gap-2 rounded-tr-lg font-heading text-sm rounded-br-lg text-white py-4 px-6 flex items-center field__button"
+                    name="commit"
+                    id="Subscribe"
+                    aria-label="{{ 'newsletter.label' | t }}"
+                  >
+                    {{ 'newsletter.label' | t }}
+                    {% render 'icon', type: 'arrow', class: 'h-4 w-4' %}
+                  </button>
+                </div>
+                {%- if form.errors -%}
+                  <small class="newsletter-form__message form__message" id="ContactFooter-error">
+                    {{- form.errors.translated_fields.email | capitalize }}
+                    {{ form.errors.messages.email -}}
+                  </small>
+                {%- endif -%}
+              </div>
+              {%- if form.posted_successfully? -%}
+                <h3
+                  class="newsletter-form__message newsletter-form__message--success form__message"
+                  id="ContactFooter-success"
+                  tabindex="-1"
+                  autofocus
+                >
+                  {{- 'newsletter.success' | t }}
+                </h3>
+              {%- endif -%}
+            {%- endform -%}
+          </div>
+        {%- when 'linklist' -%}
+          <div class="col-span-6 md:col-span-2">
+            <div>
+              <h3 class="font-heading text-base mb-4">{{ linklists[block.settings.linklist].title }}</h3>
+              <ul>
+                {% for link in linklists[block.settings.linklist].links %}
+                  <li>
+                    <a class="font-heading block text-sm mb-4 text-contrast-dark" href="{{ link.url }}">
+                      {{ link.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {%- else -%}
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.footer.name",
+  "class": "moonbase-footer",
+  "tag": "footer",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:sections.footer.settings.paragraph"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "linklist",
+      "name": "Link List",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "link_list",
+          "id": "linklist",
+          "label": "t:moonbase.sections.header.announcement_bar.block.title"
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Newsletter Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Newsetter Content"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

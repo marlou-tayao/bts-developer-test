@@ -1,0 +1,223 @@
+{
+  "settings_schema": {
+    "custom_settings": {
+      "name": "Custom settings",
+      "settings": {
+        "header": "About JSON settings",
+        "paragraph": "The settings_schema.json file controls the content of the Theme settings area of the theme editor. Settings in this file translate to global theme settings, which can be accessed through the Liquid settings object. [Learn more](https:\/\/shopify.dev\/themes\/architecture\/settings)"
+      }
+    },
+    "favicon": {
+      "name": "Favicon",
+      "settings": {
+        "label": "Image",
+        "info": "32 x 32px .png recommended"
+      }
+    },
+    "logo": {
+      "name": "Logo",
+      "settings": {
+        "label": "Image",
+        "info": "32 x 32px .png recommended"
+      }
+    },
+    "social-media": {
+      "name": "Social media",
+      "settings": {
+        "header": {
+          "content": "Social accounts"
+        },
+        "social_twitter_link": {
+          "label": "Twitter",
+          "info": "https://twitter.com/shopify"
+        },
+        "social_facebook_link": {
+          "label": "Facebook",
+          "info": "https://facebook.com/shopify"
+        },
+        "social_pinterest_link": {
+          "label": "Pinterest",
+          "info": "https://pinterest.com/shopify"
+        },
+        "social_instagram_link": {
+          "label": "Instagram",
+          "info": "http://instagram.com/shopify"
+        },
+        "social_tiktok_link": {
+          "label": "TikTok",
+          "info": "https://tiktok.com/@shopify"
+        },
+        "social_tumblr_link": {
+          "label": "Tumblr",
+          "info": "https://shopify.tumblr.com"
+        },
+        "social_snapchat_link": {
+          "label": "Snapchat",
+          "info": "https://www.snapchat.com/add/shopify"
+        },
+        "social_youtube_link": {
+          "label": "YouTube",
+          "info": "https://www.youtube.com/shopify"
+        },
+        "social_vimeo_link": {
+          "label": "Vimeo",
+          "info": "https://vimeo.com/shopify"
+        }
+      }
+    }
+  },
+  "moonbase": {
+    "general": {
+      "continue_shopping": "Continue Shopping"
+    },
+    "settings": {
+      "spacing": {
+        "margin": {
+          "label": "Please choose a margin size for this section",
+          "info": "This setting will be applied to the top of the section."
+        },
+        "padding": {
+          "label": "Please choose a padding size for this section",
+          "info": "This setting will be applied to the top and bottom of the section."
+        },
+        "options": {
+          "option__1": "Extra Small",
+          "option__2": "Small",
+          "option__3": "Default",
+          "option__4": "Large",
+          "option__5": "Extra Large",
+          "option__6": "2x Extra Large",
+          "option__7": "3x Extra Large"
+        }
+      }
+    },
+    "sections": {
+      "header": {
+        "name": "Header", 
+        "announcement_bar": {
+          "name": "Announcement Bar",
+          "settings": {
+            "enable": "Enable this section",
+            "enable_autoplay": "Enable Autoplay",
+            "autoplay_delay": "Autoplay Delay"
+          },
+          "block": {
+            "name": "Block",
+            "title": "Please enter a message",
+            "url": "Please select a URL"
+          }
+        },
+        "settings": {
+          "paragraph": "Add custom settings for this section. [Learn more](https:\/\/shopify.dev\/themes\/architecture\/settings)",
+          "menu": "Please select a menu to display in the header"
+        }, 
+        "mega_menu": {
+          "block": {
+            "label": "Menu Block",
+            "title": "Block Title",
+            "image": "Please select an image. Recommended 500x500 png",
+            "menu_label": "Please enter the lower-case name of the menu you would like to use for this megamenu.",
+            "url_label": "Select a URL for this block",
+            "product_info": "If a product is selected, this will automatically override the menu selection.",
+            "product_label": "Select a product to appear in the megamenu"
+          }
+        }
+      },
+      "footer": {
+        "name": "Footer",
+        "settings": {
+          "paragraph": "Add custom settings for this section. [Learn more](https:\/\/shopify.dev\/themes\/architecture\/settings)"
+        }
+      },
+      "password": {
+        "title": "Password Page",
+        "background": {
+          "header": "Background",
+          "label": "Upload a background image"
+        }
+      }
+    },
+    "hero": {
+      "name": "Hero",
+      "settings": {
+        "height": {
+          "info": "Info goes here.",
+          "label": "Label goes here",
+          "options": {
+            "option__1": "Responsive",
+            "option__2": "Small",
+            "option__3": "Medium",
+            "option__4": "Large"
+          }
+        }
+      },
+      "image": {
+        "name": "Image",
+        "label": "Hero Image",
+        "info": "1920 x 1080 .jpg recommended"
+      },
+      "video": {
+        "name": "Video",
+        "label": "Video",
+        "info": "1920 x 1080 30s maximum recommended"
+      }
+    }
+  },
+  "sections": {
+    "header": {
+      "name": "Header",
+      "announcement_bar": {
+        "name": "Announcement Bar",
+        "settings": {
+          "enable": "Enable this section",
+          "enable_autoplay": "Enable Autoplay",
+          "autoplay_delay": "Autoplay Delay"
+        },
+        "block": {
+          "name": "Block",
+          "title": "Please enter a message",
+          "url": "Please select a URL"
+        }
+      },
+      "settings": {
+        "paragraph": "Add custom settings for this section. [Learn more](https:\/\/shopify.dev\/themes\/architecture\/settings)"
+      },
+      "mega_menu": {
+        "block": {
+          "label": "Menu Block",
+          "title": "Block Title",
+          "image": "Please select an image. Recommended 500x500 png",
+          "menu_label": "Please enter the lower-case name of the menu you would like to use for this megamenu.",
+          "url_label": "Select a URL for this block",
+          "product_info": "If a product is selected, this will automatically override the menu selection.",
+          "product_label": "Select a product to appear in the megamenu"
+        }
+      }
+    },
+    "footer": {
+      "name": "Footer",
+      "settings": {
+        "paragraph": "Add custom settings for this section. [Learn more](https:\/\/shopify.dev\/themes\/architecture\/settings)"
+      }
+    },
+    "password": {
+      "title": "Password Page",
+      "background": {
+        "header": "Background",
+        "label": "Upload a background image"
+      }
+    }
+  },
+  "fonts": {
+    "settings": {
+      "font_body": {
+        "label": "Body font",
+        "info": "The font used for body text"
+      },
+      "font_heading": {
+        "label": "Heading font",
+        "info": "The font used for heading text"
+      }
+    }
+  }
+}

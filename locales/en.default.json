@@ -1,0 +1,27 @@
+{
+  "action": {
+    "log_in": "Log in",
+    "log_out": "Log out",
+    "register": "Register",
+    "account": "Account",
+    "cart": "Bag"
+  },
+  "wishlist": {
+    "title": "Wishlist"
+  },
+  "newsletter": {
+    "label": "Submit",
+    "placeholder": "Enter your email address",
+    "success": "Thank you for signing up!"
+  },
+  "404": {
+    "title": "404 Page Not Found",
+    "text": "The page you requested does not exist."
+  },
+  "page": {
+    "password": {
+      "text": "Please enter the password to enter the store.",
+      "submit": "Submit"
+    }
+  }
+}
