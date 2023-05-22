@@ -105,5 +105,6 @@ npm start
 ## Once you have completed the task
 
 1. Make sure deploy the theme to your store (zip the files and upload them).
-2. Provide us with the store URL so that we can request collaborator access to review your test.
-3. Accept the collaborator access request from us.
+2. Provide us with a ZIP of your source code.
+3. Provide us with the store URL so that we can request collaborator access to review your test.
+4. Accept the collaborator access request from us.
