@@ -82,20 +82,28 @@ Before developing, you will need to install the Shopify CLI. Shopify provide a g
 
 ## Getting started
 
-1. Open your local terminal / command prompt.
-2. Clone the most recent version of this theme using SSH:
+1. [Create a new Shopify development store](https://help.shopify.com/en/partners/dashboard/managing-stores/development-stores#create-a-development-store-for-testing-apps-or-themes) from your [Shopify Partners](https://www.shopify.com/partners) dashboard.
+2. Open your local terminal / command prompt.
+3. Clone the most recent version of this theme using SSH:
 ```sh
 git clone git@github.com:bravetheskies/bts-developer-test.git
 ```
-3. Navigation to the folder you have just cloned:
+4. Navigation to the folder you have just cloned:
 ```sh
 cd bts-developer-test
 ```
-4. Install the dependencies for the project:
+5. Update [/shopify.presets.json](/shopify.presets.json) with the URL of the store you just created. e.g. `themoonbase.myshopify.com` becomes `your-new-store.myshopify.com`.
+6. Install the dependencies for the project:
 ```sh
-npm i
+npm ci
 ```
-5. Once installed, run the following command to start development:
+7. Once installed, run the following command to start development:
 ```sh
 npm start
 ```
+
+## Once you have completed the task
+
+1. Make sure deploy the theme to your store (zip the files and upload them).
+2. Provide us with the store URL so that we can request collaborator access to review your test.
+3. Accept the collaborator access request from us.
