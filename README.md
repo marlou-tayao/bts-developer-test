@@ -1,16 +1,15 @@
 # Brave The Skies - Technical Test
 
-> This is our development test that is required from all new potential developers.
-
+This is our development test that is required from all new potential developers.
 
 ## Task
-If you've got this far in the recruitement proccess, well done! Onto the fun stuff...
+If you've got this far in the recruitment process, well done! Onto the fun stuff...
 
-In this respository, you will notice that we have setup a barebones theme / template files. We've setup a very basic header and footer to give the theme a bit of stability of the bat but we would like you to fork this repository and create a featured product card section that has different functionality on desktop compared to mobile.
+In this repository, you will notice that we have setup a barebones theme / template files. We've setup a very basic header and footer to give the theme a bit of stability of the bat but we would like you to fork this repository and create a featured product card section that has different functionality on desktop compared to mobile.
 
 On desktop, the product cards should automatically drop into a grid format (4 product cards across should work fine) but when the user is on mobile, we would like you to have this grid display the product cards in a slider-type format. This can be achieved by using a Slider library of your choice but our preference here at Brave the Skies is [Swiper.js](https://swiperjs.com/).
 
-When you fork the respositiory and start working, you will notice that the scaffold is bundled with Webpack and Tailwind. This would be preferrable to use throughout the task.
+When you fork the repository and start working, you will notice that the scaffold is bundled with Webpack and Tailwind. This would be preferable to use throughout the task.
 
 We've included a JPEG of the product card design in this repo to show you how it should look like. On the left, we have a non-hovered state and on the right, hovered. If you don't have chance to get around to doing the add to cart functionality, that's not an issue.
 
@@ -22,7 +21,7 @@ Thats it. We don't want to shackle you with further restrictions. Development is
 ### If Possible
 
 #### Tags on Product Card
-In the design, there are badges on the product card. It your choice on how you want to show these on your work, whether it be tags or metafields. Having these included will show us your understanding of the intricies of Shopify and how the products are catalogued. 
+In the design, there are badges on the product card. It your choice on how you want to show these on your work, whether it be tags or metafields. Having these included will show us your understanding of the intricacies of Shopify and how the products are catalogued. 
 
 #### Add to Cart
 On the second image in the design, there is a Quick Add to Cart Button. This isn't required but if you are able to implement the functionality for this, that would be a bonus.
