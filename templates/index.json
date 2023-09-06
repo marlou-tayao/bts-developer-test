@@ -1,10 +1,18 @@
 {
   "sections": {
     "main": {
-      "type": "main-index"
+      "type": "main-index",
+      "settings": {
+      }
+    },
+    "c6df0076-35ec-4a90-a727-c5191262845f": {
+      "type": "home-product-test",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c6df0076-35ec-4a90-a727-c5191262845f"
   ]
 }
