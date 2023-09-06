@@ -10,9 +10,13 @@ p {
 }
 .collection-card .image-container {
   position: relative;
+  text-align: center;
 }
 
 .collection-card .image-container .quick-add-overlay {
   background: #363636 ;
   color: #fff;
+  width: 100%;
+  padding: 5px 0;
+  
 }
