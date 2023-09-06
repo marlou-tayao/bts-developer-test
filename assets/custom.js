@@ -1,6 +1,9 @@
-
+document.addEventListener('DOMContentLoaded', function() {
+   
 let w = document.documentElement.clientWidth;
 let swiper;
+
+
 function loadSwiper(){
     if(w <= 767) {
       console.log(w + "wdith mobile");
@@ -18,3 +21,4 @@ function loadSwiper(){
 
 loadSwiper();
 
+});
