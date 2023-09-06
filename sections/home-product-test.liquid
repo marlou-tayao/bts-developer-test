@@ -4,9 +4,11 @@
         {% for product in section.settings.collection.products %}
         <div class="collection-card swiper-slide">
               <div class="image-container">
-                <ul class="product-tags">
+                <ul class="product-tags flex">
                   {% for tag in product.tags %}
-                  <li><span>{{ tag }}</span>></li>
+                  <li><
+                        span>{{ tag }}</span>>
+                  </li>
                   {% endfor %}
                 </ul>
                 <img class="slideshow__image slideshow__image--{{ block.id }} lazyload"
