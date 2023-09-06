@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n\n\n// Initialisation code\n(() => {\n  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');\n  const Moonbase = window.Moonbase || {};\n})();\n\n\n//# sourceURL=webpack://moonbase-framework/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n\r\n\r\n// Initialisation code\r\n(() => {\r\n  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');\r\n  const Moonbase = window.Moonbase || {};\r\n})();\r\n\n\n//# sourceURL=webpack://moonbase-framework/./src/main.js?");
 
 /***/ })
 
