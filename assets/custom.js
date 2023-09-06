@@ -6,7 +6,7 @@ var swiper = new Swiper(".grid-swiper", {
     clickable: true,
   },
   breakpoints: {
-    767: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
