@@ -1,7 +1,6 @@
 let mobile = window.matchMedia('(min-width: 768px)');
-let swiper;
+let swiper; 
 
-swiper.destroy();
 function sizeChanged(){
     // Get width
     let w = document.documentElement.clientWidth;
