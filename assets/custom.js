@@ -1,5 +1,5 @@
 let mobile = window.matchMedia('(min-width: 768px)');
-var swiper = new Swiper(".grid-swiper", {
+var swiper = new Swiper("#grid-swiper", {
   slidesPerView: 2,
   spaceBetween: 40,
   pagination: {
@@ -18,7 +18,7 @@ function sizeChanged(){
       swiper.destroy(deleteInstance, cleanStyles)
       init = false;
     } else {
-      var swiper = new Swiper(".grid-swiper", {
+      var swiper = new Swiper("#grid-swiper", {
         slidesPerView: 2,
         spaceBetween: 40,
         pagination: {
