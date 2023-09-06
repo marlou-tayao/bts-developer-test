@@ -6,6 +6,7 @@ function sizeChanged(){
     
     // Display swiper or remove
     if(mobile.matches) {
+      
       let swiper = new Swiper(".grid-swiper", {
         slidesPerView: 2,
         spaceBetween: 40,
@@ -15,6 +16,7 @@ function sizeChanged(){
           clickable: true,
         },
       });
+      swiper.destroy();
     } else {
       let swiper = new Swiper(".grid-swiper", {
         slidesPerView: 2,
