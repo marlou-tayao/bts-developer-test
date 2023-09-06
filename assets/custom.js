@@ -17,14 +17,7 @@ function sizeChanged(){
     if(mobile.matches) {
       swiper.destroy();
     } else {
-      let swiper = new Swiper(".grid-swiper", {
-        slidesPerView: 2,
-        spaceBetween: 40,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+      swiper.init();
     }
 }
 
