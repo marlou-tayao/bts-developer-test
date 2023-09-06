@@ -8,7 +8,7 @@ let swiper = new Swiper(".grid-swiper", {
     clickable: true,
   },
 });
-
+swiper.destroy();
 function sizeChanged(){
     // Get width
     let w = document.documentElement.clientWidth;
@@ -18,6 +18,7 @@ function sizeChanged(){
       swiper.destroy();
     } else {
       swiper.init();
+      swiper.destroy();
       let swiper = new Swiper(".grid-swiper", {
         slidesPerView: 2,
         spaceBetween: 40,
