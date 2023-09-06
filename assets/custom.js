@@ -15,7 +15,7 @@ function sizeChanged(){
     
     // Display swiper or remove
     if(mobile.matches) {
-      swiper.destroy();
+      swiper.destroy(deleteInstance, cleanStyles)
       init = false;
     } else {
       var swiper = new Swiper(".grid-swiper", {
