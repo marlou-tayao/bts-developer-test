@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".grid-swiper", {
   slidesPerView: 4,
   spaceBetween: 40,
   pagination: {
