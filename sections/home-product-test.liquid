@@ -1,7 +1,6 @@
 <section id="{{ section.id }}" class="container mx-auto px-2">
     <div class="swiper grid-swiper">
-      <div class="swiper-wrapper">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 ">
+      <div class="swiper-wrapper grid grid-cols-2 md:grid-cols-4 gap-4">
         {% for product in section.settings.collection.products %}
         <div class="collection-card swiper-slide">
               <div class="image-container">
@@ -24,7 +23,6 @@
   
         </div>
         {% endfor %}
-      </div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
