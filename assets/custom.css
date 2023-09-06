@@ -14,9 +14,15 @@ p {
 }
 
 .collection-card .image-container .quick-add-overlay {
+  display:none;
   background: #363636 ;
   color: #fff;
   width: 100%;
   padding: 5px 0;
-  
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.collection-card .image-container:hover .quick-add-overlay {
+  display: block;
 }
