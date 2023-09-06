@@ -8,8 +8,7 @@ function sizeChanged(){
     
     // Display swiper or remove
     if(mobile.matches) {
-      swiper.destroy(deleteInstance, cleanStyles);
-      // swiper.destroy();
+      swiper.destroy();
     } else {
       let swiper = new Swiper(".grid-swiper", {
         slidesPerView: 2,
