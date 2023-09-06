@@ -8,3 +8,8 @@ label.product-vendor {
 p {
   padding: 5px 0;
 }
+
+input#quick-add {
+  background: #f7f7f7;
+  color: #fff;
+}
