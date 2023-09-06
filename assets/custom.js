@@ -18,7 +18,6 @@ function sizeChanged(){
       swiper.destroy();
     } else {
       swiper.init();
-      
     }
 }
 
