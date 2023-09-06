@@ -3,7 +3,7 @@ let w = document.documentElement.clientWidth;
 let swiper;
 function loadSwiper(){
     if(w <= 767) {
-      console.log(w);
+      console.log(w + "wdith mobile");
       let swiper = new Swiper(".grid-swiper", {
         slidesPerView: 2,
         spaceBetween: 20,
