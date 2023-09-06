@@ -15,7 +15,8 @@ p {
 }
 
 .collection-card .image-container .quick-add-overlay {
-  display:none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
   background: #363636 ;
   color: #fff;
   width: 100%;
@@ -26,5 +27,6 @@ p {
   cursor: pointer;
 }
 .collection-card .image-container:hover .quick-add-overlay {
-  display: block;
+  opacity: 1;
+  transition: opacity .55s ease-in-out;
 }
