@@ -17,6 +17,8 @@ p {
 .collection-card .image-container .quick-add-overlay {
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
   background: #363636 ;
   color: #fff;
   width: 100%;
@@ -29,4 +31,6 @@ p {
 .collection-card .image-container:hover .quick-add-overlay {
   opacity: 1;
   transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
 }
