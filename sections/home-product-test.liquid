@@ -6,7 +6,7 @@
               <div class="image-container">
                 <ul class="product-tags">
                   {% for tag in product.tags %}
-                  <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
+                  <li><span>{{ tag }}</span>></li>
                   {% endfor %}
                 </ul>
                 <img class="slideshow__image slideshow__image--{{ block.id }} lazyload"
