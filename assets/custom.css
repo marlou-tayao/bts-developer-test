@@ -39,6 +39,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+    padding: 10px;
 }
 
 .collection-card .image-container .product-tags li.tag-1 {
@@ -48,6 +49,7 @@ p {
     padding: 0 10px;
     color: blue;
     font-size: 14px;
+    margin-right: 5px;
 }
 
 .collection-card .image-container .product-tags li.tag-2 {
