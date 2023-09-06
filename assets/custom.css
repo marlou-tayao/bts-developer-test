@@ -35,6 +35,29 @@ p {
   -webkit-transition: opacity .15s ease-in-out;
 }
 
+.collection-card .image-container .product-tags {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.collection-card .image-container .product-tags li.tag-1 {
+    background: #fff;
+    border: 1px solid blue;
+    border-radius: 50px;
+    padding: 0 10px;
+    color: blue;
+    font-size: 14px;
+}
+
+.collection-card .image-container .product-tags li.tag-2 {
+    background: #fff;
+    border: 1px solid red;
+    border-radius: 50px;
+    padding: 0 10px;
+    color: red;
+    font-size: 14px;
+}
 
 .swiper {
   width: 100%;
