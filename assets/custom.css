@@ -8,8 +8,11 @@ label.product-vendor {
 p {
   padding: 5px 0;
 }
+.collection-card .image-container {
+  position: relative;
+}
 
-input#quick-add {
+.collection-card .image-container .quick-add-overlay {
   background: #363636 ;
   color: #fff;
 }
