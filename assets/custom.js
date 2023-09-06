@@ -1,12 +1,4 @@
 let mobile = window.matchMedia('(min-width: 768px)');
-var swiper = new Swiper("#grid-swiper", {
-  slidesPerView: 2,
-  spaceBetween: 40,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
 function sizeChanged(){
     // Get width
