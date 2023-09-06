@@ -5,15 +5,9 @@ var swiper = new Swiper(".grid-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  breakpoints: {
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
 });
 
-let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+let mobile = window.matchMedia('(min-width: 768px)');
 
 if(mobile.matches) {
   swiper.destroy();
