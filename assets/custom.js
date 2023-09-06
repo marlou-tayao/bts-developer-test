@@ -1,5 +1,5 @@
 let w = document.documentElement.clientWidth;
-
+console.log(w);
 if(w <= 767) {
   let swiper = new Swiper(".grid-swiper", {
     slidesPerView: 2,
