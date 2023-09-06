@@ -12,3 +12,10 @@ var swiper = new Swiper(".grid-swiper", {
     },
   },
 });
+
+let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+
+if(mobile.matches) {
+  swiper.destroy();
+  init = false;
+}
