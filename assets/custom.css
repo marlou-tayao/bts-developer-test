@@ -1,3 +1,6 @@
 h3.product-title, p.product-price {
   font-weight:500;
 }
+label.product-vendor {
+  font-size: 16px;
+}
