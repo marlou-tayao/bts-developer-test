@@ -10,7 +10,6 @@ let swiper = new Swiper(".grid-swiper", {
     });
 function sizeChanged(){
     // Get width
-    console.log('resized');
     let w = document.documentElement.clientWidth;
     
     // Display swiper or remove
