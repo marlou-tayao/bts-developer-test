@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+
     let w = document.documentElement.clientWidth;
     function loadSwiper(){
       console.log('run');
@@ -16,5 +16,4 @@ $( document ).ready(function() {
     }
     
     loadSwiper();
-});
 
