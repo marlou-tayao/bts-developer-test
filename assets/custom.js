@@ -9,7 +9,13 @@ var swiper = new Swiper(".grid-swiper", {
 
 let mobile = window.matchMedia('(min-width: 768px)');
 
-if(mobile.matches) {
-  swiper.destroy();
-  init = false;
-}
+
+$(window).resize(function() {
+  //resize just happened, pixels changed
+  if(mobile.matches) {
+    swiper.destroy();
+    init = false;
+  } else {
+    swiper.init();
+  }
+});
