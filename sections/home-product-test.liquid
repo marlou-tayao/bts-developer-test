@@ -6,8 +6,8 @@
               <div class="image-container">
                 <ul class="product-tags flex">
                   {% for tag in product.tags %}
-                  <li><
-                        span>{{ tag }}</span>>
+                  <li>
+                        <span class="{{ tag | handleize }}">{{ tag }}</span>
                   </li>
                   {% endfor %}
                 </ul>
